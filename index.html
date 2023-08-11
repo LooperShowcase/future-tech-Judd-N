@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="brand">
+        <h1>Blastic<br></h1>
+        <text>Your friendly Blastic and AI assistant</text>
+    </div>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="input" name="Input" value="" placeholder="pls talk to me i am lonely">
+            <button id="sendinputgpt" onclick="
+            event.preventDefault();
+            conversationUserAdd(document.getElementById('input').value);
+            openai_test();
+            ">Send</button>
+        </div>
+        <div id="chat-container"></div>
+    </div>
+</body>
+</html>
