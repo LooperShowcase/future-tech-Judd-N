@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Function Testing</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- Add any necessary CSS links or stylesheets here -->
+</head>
+<body>
+    <header>
+        <h1>Admin Page</h1>
+        <!-- Add navigation or user information here -->
+    </header>
+
+    <nav>
+        <!-- Add navigation links or menu items here -->
+    </nav>
+
+    <main>
+        <section>
+            <h2>Function Testing</h2>
+            <p>This section is for testing your functions.</p>
+            <button onclick="speak()">SpeakTest</button>
+            <button id="testFunctionButton">Test Function</button>
+            <div id="functionResult"></div>
+        </section>
+
+        <!-- Add more sections for different testing purposes if needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Admin Page. All rights reserved.</p>
+    </footer>
+
+    <!-- Add any necessary JavaScript scripts or links here -->
+    <script>
+        // Example function to test
+        function testFunction() {
+            // Replace this with your actual function testing logic
+            return "Function was successfully tested!";
+        }
+
+        // Function to handle button click event
+        document.getElementById("testFunctionButton").addEventListener("click", function() {
+            const functionResultElement = document.getElementById("functionResult");
+            const result = testFunction();
+            functionResultElement.textContent = result;
+        });
+    </script>
+</body>
+</html>

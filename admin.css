@@ -1,0 +1,63 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background and text colors for dark theme */
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+    text-align: center; /* Center align main content */
+}
+
+/* Style buttons */
+.button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px; /* Add margin for spacing between buttons */
+}
+
+/* Style button on hover */
+.button:hover {
+    background-color: #777;
+}
+
+/* Center align button and result */
+#functionResult {
+    text-align: center;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
